@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 const electron = require('electron');
 // Module to control application life.
 const app = electron.app;
@@ -10,6 +12,28 @@ const BrowserWindow = electron.BrowserWindow;
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
+
+
+var options = [
+               //'enable-tcp-fastopen',
+               //'enable-experimental-canvas-features',
+               'enable-experimental-web-platform-features',
+               //'enable-overlay-scrollbars',
+               //'enable-hardware-overlays',
+               //'enable-universal-accelerated-overflow-scroll',
+               //'allow-file-access-from-files',
+               //'allow-insecure-websocket-from-https-origin',
+               ['js-flags', '--harmony_collections']
+             ];
+
+for(var i=0; i < options.length; ++i) {
+   if (typeof options[i] === 'string')
+     app.commandLine.appendSwitch(options[i]);
+   else
+     app.commandLine.appendSwitch(options[i][0], options[i][1]);
+ }
+
+
 
 function createWindow() {
 	// Create the browser window.

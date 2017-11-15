@@ -1,28 +1,27 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "Initium",
+  "version": "0.5.3",
+  "description": "Initium is a MMORPG browser-based game made by Redditors. Often touted as one of the best games to play while at work/school. It's like a regular MMORPG but made from photographs, complete with Diablo-like loot, monsters, dungeons, and server-wide events.",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atom/electron-quick-start.git"
+    "url": "git+https://github.com/Emperorlou/Initium-Electron.git"
   },
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial"
+    "Initium",
+    "mmorpg",
+    "video",
+    "game"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Nikolas Gauvreau",
   "bugs": {
-    "url": "https://github.com/atom/electron-quick-start/issues"
+    "url": "https://initium.reddit.com"
   },
-  "homepage": "https://github.com/atom/electron-quick-start#readme",
+  "homepage": "https://www.playinitium.com",
   "devDependencies": {
-    "electron-prebuilt": "^0.36.0"
+    "electron-prebuilt": "^1.4.13"
   }
 }

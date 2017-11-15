@@ -46,6 +46,8 @@ function createWindow() {
 		icon: __dirname+"/app/phonegap/Initium-Phonegap/www/favicon.png",
 		"node-integration":false
 	});
+	
+	mainWindow.setMenu(null);	// Disable the main menu
 
 	// and load the index.html of the app.
 	// mainWindow.loadURL("https://www.playinitium.com/main.jsp");
